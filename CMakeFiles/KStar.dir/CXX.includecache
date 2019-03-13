@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/alexandreroulin/KStar/Grid.tpp
+/Users/alexandreroulin/work/nibbler/extern/KStar/Grid.tpp
 vector
 -
 assert.h
@@ -14,9 +14,9 @@ assert.h
 iostream
 -
 
-/Users/alexandreroulin/KStar/KStar.cpp
+/Users/alexandreroulin/work/nibbler/extern/KStar/KStar.cpp
 KStar.hpp
-/Users/alexandreroulin/KStar/KStar.hpp
+/Users/alexandreroulin/work/nibbler/extern/KStar/KStar.hpp
 iostream
 -
 cmath
@@ -30,7 +30,7 @@ type_traits
 array
 -
 
-/Users/alexandreroulin/KStar/KStar.hpp
+/Users/alexandreroulin/work/nibbler/extern/KStar/KStar.hpp
 vector
 -
 array
@@ -38,5 +38,5 @@ array
 ostream
 -
 Grid.tpp
-/Users/alexandreroulin/KStar/Grid.tpp
+/Users/alexandreroulin/work/nibbler/extern/KStar/Grid.tpp
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/KStar.dir/KStar.cpp.o"
-  "libKStar.pdb"
-  "libKStar.a"
+  "../../lib/libKStar.pdb"
+  "../../lib/libKStar.a"
 )
 
 # Per-language clean rules from dependency scanning.

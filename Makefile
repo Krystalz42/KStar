@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.13.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alexandreroulin/KStar
+CMAKE_SOURCE_DIR = /Users/alexandreroulin/work/nibbler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alexandreroulin/KStar
+CMAKE_BINARY_DIR = /Users/alexandreroulin/work/nibbler
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandreroulin/KStar/CMakeFiles /Users/alexandreroulin/KStar/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandreroulin/KStar/CMakeFiles 0
+	cd /Users/alexandreroulin/work/nibbler && $(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandreroulin/work/nibbler/CMakeFiles /Users/alexandreroulin/work/nibbler/extern/KStar/CMakeFiles/progress.marks
+	cd /Users/alexandreroulin/work/nibbler && $(MAKE) -f CMakeFiles/Makefile2 extern/KStar/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandreroulin/work/nibbler/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/alexandreroulin/work/nibbler && $(MAKE) -f CMakeFiles/Makefile2 extern/KStar/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,30 +97,32 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/alexandreroulin/work/nibbler && $(MAKE) -f CMakeFiles/Makefile2 extern/KStar/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/alexandreroulin/work/nibbler && $(MAKE) -f CMakeFiles/Makefile2 extern/KStar/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/alexandreroulin/work/nibbler && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named KStar
+# Convenience name for target.
+extern/KStar/CMakeFiles/KStar.dir/rule:
+	cd /Users/alexandreroulin/work/nibbler && $(MAKE) -f CMakeFiles/Makefile2 extern/KStar/CMakeFiles/KStar.dir/rule
+.PHONY : extern/KStar/CMakeFiles/KStar.dir/rule
 
-# Build rule for target.
-KStar: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 KStar
+# Convenience name for target.
+KStar: extern/KStar/CMakeFiles/KStar.dir/rule
+
 .PHONY : KStar
 
 # fast build rule for target.
 KStar/fast:
-	$(MAKE) -f CMakeFiles/KStar.dir/build.make CMakeFiles/KStar.dir/build
+	cd /Users/alexandreroulin/work/nibbler && $(MAKE) -f extern/KStar/CMakeFiles/KStar.dir/build.make extern/KStar/CMakeFiles/KStar.dir/build
 .PHONY : KStar/fast
 
 KStar.o: KStar.cpp.o
@@ -129,7 +131,7 @@ KStar.o: KStar.cpp.o
 
 # target to build an object file
 KStar.cpp.o:
-	$(MAKE) -f CMakeFiles/KStar.dir/build.make CMakeFiles/KStar.dir/KStar.cpp.o
+	cd /Users/alexandreroulin/work/nibbler && $(MAKE) -f extern/KStar/CMakeFiles/KStar.dir/build.make extern/KStar/CMakeFiles/KStar.dir/KStar.cpp.o
 .PHONY : KStar.cpp.o
 
 KStar.i: KStar.cpp.i
@@ -138,7 +140,7 @@ KStar.i: KStar.cpp.i
 
 # target to preprocess a source file
 KStar.cpp.i:
-	$(MAKE) -f CMakeFiles/KStar.dir/build.make CMakeFiles/KStar.dir/KStar.cpp.i
+	cd /Users/alexandreroulin/work/nibbler && $(MAKE) -f extern/KStar/CMakeFiles/KStar.dir/build.make extern/KStar/CMakeFiles/KStar.dir/KStar.cpp.i
 .PHONY : KStar.cpp.i
 
 KStar.s: KStar.cpp.s
@@ -147,7 +149,7 @@ KStar.s: KStar.cpp.s
 
 # target to generate assembly for a file
 KStar.cpp.s:
-	$(MAKE) -f CMakeFiles/KStar.dir/build.make CMakeFiles/KStar.dir/KStar.cpp.s
+	cd /Users/alexandreroulin/work/nibbler && $(MAKE) -f extern/KStar/CMakeFiles/KStar.dir/build.make extern/KStar/CMakeFiles/KStar.dir/KStar.cpp.s
 .PHONY : KStar.cpp.s
 
 # Help Target
@@ -173,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/alexandreroulin/work/nibbler && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

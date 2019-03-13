@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libKStar.a  CMakeFiles/KStar.dir/KStar.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libKStar.a
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../lib/libKStar.a  CMakeFiles/KStar.dir/KStar.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../lib/libKStar.a
