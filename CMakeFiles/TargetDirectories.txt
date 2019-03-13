@@ -1,0 +1,3 @@
+/Users/alexandreroulin/KStar/CMakeFiles/rebuild_cache.dir
+/Users/alexandreroulin/KStar/CMakeFiles/edit_cache.dir
+/Users/alexandreroulin/KStar/CMakeFiles/KStar.dir

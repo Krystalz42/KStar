@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alexandreroulin/KStar/Grid.tpp
+vector
+-
+assert.h
+-
+iostream
+-
+
+/Users/alexandreroulin/KStar/KStar.cpp
+KStar.hpp
+/Users/alexandreroulin/KStar/KStar.hpp
+iostream
+-
+cmath
+-
+iomanip
+-
+cstdlib
+-
+type_traits
+-
+array
+-
+
+/Users/alexandreroulin/KStar/KStar.hpp
+vector
+-
+array
+-
+ostream
+-
+Grid.tpp
+/Users/alexandreroulin/KStar/Grid.tpp
+

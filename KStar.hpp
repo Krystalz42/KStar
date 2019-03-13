@@ -3,7 +3,7 @@
 #include <vector>
 #include <array>
 #include <ostream>
-#include "MutantGrid.tpp"
+#include "Grid.tpp"
 
 class KStar {
 
